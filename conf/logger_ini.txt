@@ -1,0 +1,38 @@
+[loggers] # loggers 对象列表
+keys=root,main
+
+
+[handlers] # handlers 对象列表
+keys=consoleHandler,fileHandler
+
+[formatters] # formatters 对象列表
+keys=fmt
+
+[logger_root]# 配置 logger_root ：设置日志级别、输出位置（控制台和文件）
+level=DEBUG
+handlers=consoleHandler,fileHandler
+
+[logger_main]# 配置 logger_main ：设置日志级别、输出位置（文件）、除开root logger 对象其余的logger对象 qualname 参数不能少
+level = DEBUG
+handlers = fileHandler
+qualname=main
+propagate=0
+
+
+[handler_consoleHandler] # consoleHandler 控制器输出方向、级别、输出格式、参数
+class = StreamHandler
+level = DEBUG
+formatter = fmt
+args = (sys.stdout,)
+
+[handler_fileHandler]#  fileHandler 控制器输出方向、级别、输出格式、参数
+class = logging.handlers.RotatingFileHandler
+level = DEBUG
+formatter = fmt
+args = ('test.log', 'a', 10000, 3,)
+#args = ("test.log", mode="w", maxBytes=1000, backupCount=3, encoding="utf-8")
+
+[formatter_fmt]
+format=%(asctime)s - %(name)s - %(levelname)s - %(message)s
+datefmt=
+

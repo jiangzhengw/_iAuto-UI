@@ -1,0 +1,7 @@
+¡¾ 2021-06-02  20:53:01 ¡¿ Wed  root log_demo1.py <module> DEBUG D:\PythonPro\_iAuto-UI\src\log\log_demo1.py debug 
+¡¾ 2021-06-02  20:53:01 ¡¿ Wed  root log_demo1.py <module> INFO D:\PythonPro\_iAuto-UI\src\log\log_demo1.py info 
+¡¾ 2021-06-02  20:53:01 ¡¿ Wed  root log_demo1.py <module> WARNING D:\PythonPro\_iAuto-UI\src\log\log_demo1.py warning 
+¡¾ 2021-06-02  20:53:01 ¡¿ Wed  root log_demo1.py <module> ERROR D:\PythonPro\_iAuto-UI\src\log\log_demo1.py error 
+¡¾ 2021-06-02  20:53:01 ¡¿ Wed  root log_demo1.py <module> CRITICAL D:\PythonPro\_iAuto-UI\src\log\log_demo1.py critical 
+¡¾ 2021-06-02  20:53:01 ¡¿ Wed  root log_demo1.py <module> ERROR D:\PythonPro\_iAuto-UI\src\log\log_demo1.py exception ×Ô¶¨Òå 
+NoneType: None
