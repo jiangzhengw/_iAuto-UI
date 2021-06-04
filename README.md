@@ -4,8 +4,19 @@
 
 待补充……
 
+##### 项目结构
+
+- case：存放业务相关的执行用例
+- common：util功能，进行配置文件，环境读取，中间件等的路由
+- data：后期的数据准备工作
+- driver：后期区分mac、linux、win10，然后直接在common里将chrome driver存入环境变量，刷新环境，替代手工的配置driver到环境变量
+- log：log的存放，后期可区分all.log、error.log等
+- pageObject：PO层，存放底层元素操作，base_page存放二次封装的公共方法
+- report：results存放allure生成的json数据格式的报告；reports存放html相关的报告文件
+
 ##### 使用说明
 
+待补充……
 
 ###### 环境搭建
 
