@@ -1,10 +1,10 @@
-# Time: 2021/6/2 14:57
+# Time: 2021/6/4 17:25
 # Author: jiangzhw
-# FileName: test_case_demo1.py
+# FileName: test_case_demo2.py
 from pageObject.index import Index
 
 
-class TestCase1:
+class TestCase2:
     """test case"""
 
     def setup(self):
@@ -13,12 +13,12 @@ class TestCase1:
 
     def test_demo1(self):
         """demo case"""
-        msg = "哈哈哈"
+        msg = "111"
         self.index.search(msg)
 
     def test_demo2(self):
         """demo case"""
-        msg = "你猜我猜不猜"
+        msg = "222"
         self.index.search(msg)
 
     def teardown(self):
