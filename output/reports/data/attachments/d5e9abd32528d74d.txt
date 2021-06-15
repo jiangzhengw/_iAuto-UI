@@ -1,0 +1,70 @@
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:227 Starting new HTTP connection (1): 127.0.0.1:64788
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session HTTP/1.1" 200 757
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/timeouts {"implicit": 5000}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/timeouts HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/url {"url": "https://dhr.nowcoder.com/console"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/url HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": "dhr.nowcoder.com", "httpOnly": false, "name": "HRCLIENTID", "path": "/", "secure": false, "value": "dfd97ba6480d7d6a37263ff47beaba99"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": "dhr.nowcoder.com", "httpOnly": false, "name": "s", "path": "/", "secure": false, "value": "5af9d32299f984a152376c19827f00c9"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 1626350711, "httpOnly": false, "name": "hrat", "path": "/", "sameSite": "None", "secure": true, "value": "2d22aa0e05401f9e882ec6474b498a9dbeca79ba34b958ea0b39b0e1177bd158"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 1623760757, "httpOnly": false, "name": "c196c3667d214851b11233f5c17f99d5_gr_session_id_a511b848-316f-4009-ada5-c50ffaabe1d9", "path": "/", "secure": false, "value": "true"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "httpOnly": false, "name": "Hm_lpvt_a808a1326b6c06c437de769d1b85b870", "path": "/", "secure": false, "value": "1623758958"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 2249122747, "httpOnly": true, "name": "experimentation_subject_id", "path": "/", "secure": false, "value": "Ijc5N2QzYjliLTQ5YzAtNGNiMy05MGY3LWNiYmYyZDU5Y2Q5OSI%3D--5a3057a42d3636dbb1986263061b64d79bc26628"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 1623760757, "httpOnly": false, "name": "c196c3667d214851b11233f5c17f99d5_gr_session_id", "path": "/", "secure": false, "value": "a511b848-316f-4009-ada5-c50ffaabe1d9"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 1655294957, "httpOnly": false, "name": "Hm_lvt_a808a1326b6c06c437de769d1b85b870", "path": "/", "secure": false, "value": "1623738763,1623738771,1623740092,1623758922"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 3770628347, "httpOnly": false, "name": "from", "path": "/", "sameSite": "None", "secure": true, "value": "1"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 1633227874, "httpOnly": false, "name": "NOWCODERUID", "path": "/", "sameSite": "None", "secure": true, "value": "EEA2B4CD83034712CF6A7978F389219F"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": "dhr.nowcoder.com", "expiry": 1637374754, "httpOnly": false, "name": "_bl_uid", "path": "/", "secure": false, "value": "5qkCgp8s1Idz7teyR6Cy6499dvwn"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 1933035874, "httpOnly": false, "name": "NOWCODERCLINETID", "path": "/", "sameSite": "None", "secure": true, "value": "5BBBF024161FD61595B01F4C7E680353"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 1938502026, "httpOnly": false, "name": "c196c3667d214851b11233f5c17f99d5_gr_last_sent_cs1", "path": "/", "secure": false, "value": "494088990"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/cookie {"cookie": {"domain": ".nowcoder.com", "expiry": 1939118957, "httpOnly": false, "name": "gr_user_id", "path": "/", "secure": false, "value": "d11071d6-7afc-4f71-88c6-87cb8194b7a4"}}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/cookie HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/url {"url": "https://dhr.nowcoder.com/console"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/url HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/element {"using": "link text", "value": "\u9762\u8bd5"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/element HTTP/1.1" 200 88
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+INFO     Main.BasePage:base_page.py:116 等待元素:('link text', '面试')
+INFO     Main.BasePage:base_page.py:129 点击元素：('link text', '面试')
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/element {"using": "link text", "value": "\u9762\u8bd5"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/element HTTP/1.1" 200 88
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200/element/d14dd605-a4d2-4d59-b399-bfb4c7e6b27d/click {"id": "d14dd605-a4d2-4d59-b399-bfb4c7e6b27d"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "POST /session/511f781a4cb853b2d675e92e4555d200/element/d14dd605-a4d2-4d59-b399-bfb4c7e6b27d/click HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+INFO     Main.BasePage:base_page.py:83 等待5s后，关闭driver！
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 DELETE http://127.0.0.1:64788/session/511f781a4cb853b2d675e92e4555d200 {}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:64788 "DELETE /session/511f781a4cb853b2d675e92e4555d200 HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request

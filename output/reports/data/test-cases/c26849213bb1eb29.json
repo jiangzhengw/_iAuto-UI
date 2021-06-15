@@ -1,0 +1,73 @@
+{
+  "uid" : "c26849213bb1eb29",
+  "name" : "test_demo1",
+  "fullName" : "case.test_case_demo1.TestCase#test_demo1",
+  "historyId" : "ae65685983dac9b485acf0c38bee5cab",
+  "time" : {
+    "start" : 1622794121803,
+    "stop" : 1622794121880,
+    "duration" : 77
+  },
+  "description" : "demo case",
+  "descriptionHtml" : "<p>demo case</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "demo case",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3c9ef543ba5171fd",
+      "name" : "log",
+      "source" : "3c9ef543ba5171fd.txt",
+      "type" : "text/plain",
+      "size" : 3206
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case_demo1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "ceshi-jiangzhengwei-win"
+  }, {
+    "name" : "thread",
+    "value" : "19876-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_case_demo1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c26849213bb1eb29.json",
+  "parameterValues" : [ ]
+}

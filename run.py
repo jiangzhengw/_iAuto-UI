@@ -11,10 +11,10 @@ from common.log import Logger
 def main():
     """运行pytest用例集"""
     # -v :打印详细log日志 -s 输出case中print的内容
-    cmd = ['-vs', 'case/', '--alluredir', 'report/results']
+    cmd = ['-vs', 'case/', '--alluredir', 'output/results']
     pytest.main(cmd)
-    os.popen('allure generate report/results -o report/reports/ --clean')
-    # os.popen('allure open -h 127.0.0.1 -p 8083 report/reports/')
+    os.popen('allure generate output/results -o output/reports/ --clean')
+    # os.popen('allure open -h 127.0.0.1 -p 8083 output/reports/')
 
 
 if __name__ == "__main__":
