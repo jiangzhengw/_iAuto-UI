@@ -1,12 +1,12 @@
 {
-  "uid" : "e8b3c031b40d15f2",
+  "uid" : "f9e1abd9afd498b7",
   "name" : "test_demo2",
   "fullName" : "case.test_case_demo1.TestCase#test_demo2",
   "historyId" : "5720a23e85913b145cad80e48dff4485",
   "time" : {
-    "start" : 1622793459234,
-    "stop" : 1622793459323,
-    "duration" : 89
+    "start" : 1622794126607,
+    "stop" : 1622794126701,
+    "duration" : 94
   },
   "description" : "demo case",
   "descriptionHtml" : "<p>demo case</p>\n",
@@ -19,17 +19,17 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "5bffafc140597f45",
+      "uid" : "82dc7f5b7318b950",
       "name" : "log",
-      "source" : "5bffafc140597f45.txt",
+      "source" : "82dc7f5b7318b950.txt",
       "type" : "text/plain",
       "size" : 3263
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
     "hasContent" : true,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -46,7 +46,7 @@
     "value" : "ceshi-jiangzhengwei-win"
   }, {
     "name" : "thread",
-    "value" : "19772-MainThread"
+    "value" : "19876-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -68,6 +68,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e8b3c031b40d15f2.json",
+  "source" : "f9e1abd9afd498b7.json",
   "parameterValues" : [ ]
 }

@@ -14,7 +14,7 @@ logger = logging.getLogger("Main.BasePage")
 
 class BasePage:
     """BASIC Page"""
-    _base_url = "https://dhr.nowcoder.com/console"
+    _base_url = ""
 
     def __init__(self, driver: WebDriver = None):
         """
@@ -69,7 +69,11 @@ class BasePage:
         if self._base_url != "":
             self._driver.get(self._base_url)
             for cookie in __cookies:
+                # 取消cookie的有效时长设置
+                if 'expiry' in cookie:
+                    cookie.pop('expiry')
                 self._driver.add_cookie(cookie)
+            self._driver.get(self._base_url)
 
     def set_cookies(self):
         """设置浏览器cookies"""

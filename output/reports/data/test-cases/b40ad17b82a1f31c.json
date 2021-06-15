@@ -1,32 +1,35 @@
 {
-  "uid" : "3a94242642eae270",
-  "name" : "test_login",
-  "fullName" : "case.test_index.TestCase1#test_login",
-  "historyId" : "5b9e4507dceb784ed3745b5406359c8c",
+  "uid" : "b40ad17b82a1f31c",
+  "name" : "test_demo1",
+  "fullName" : "case.test_case_demo1.TestCase#test_demo1",
+  "historyId" : "ae65685983dac9b485acf0c38bee5cab",
   "time" : {
-    "start" : 1623761528254,
-    "stop" : 1623761529468,
-    "duration" : 1214
+    "start" : 1622794362214,
+    "stop" : 1622794362292,
+    "duration" : 78
   },
+  "description" : "demo case",
+  "descriptionHtml" : "<p>demo case</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
+    "description" : "demo case",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "d5e9abd32528d74d",
+      "uid" : "21c5b5a2ccad2eeb",
       "name" : "log",
-      "source" : "d5e9abd32528d74d.txt",
+      "source" : "21c5b5a2ccad2eeb.txt",
       "type" : "text/plain",
-      "size" : 12351
+      "size" : 3206
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
     "hasContent" : true,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -34,16 +37,16 @@
     "value" : "case"
   }, {
     "name" : "suite",
-    "value" : "test_index"
+    "value" : "test_case_demo1"
   }, {
     "name" : "subSuite",
-    "value" : "TestCase1"
+    "value" : "TestCase"
   }, {
     "name" : "host",
     "value" : "ceshi-jiangzhengwei-win"
   }, {
     "name" : "thread",
-    "value" : "3588-MainThread"
+    "value" : "22672-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -52,7 +55,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "case.test_index"
+    "value" : "case.test_case_demo1"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -64,25 +67,25 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "fcd8c5e3fd38a9a0",
+      "uid" : "57e36b4f5cc6933a",
       "status" : "passed",
       "time" : {
-        "start" : 1623761063493,
-        "stop" : 1623761065802,
-        "duration" : 2309
+        "start" : 1622794121803,
+        "stop" : 1622794121880,
+        "duration" : 77
       }
     }, {
-      "uid" : "9169c0afe3fe445b",
+      "uid" : "9155b2422f1154a5",
       "status" : "passed",
       "time" : {
-        "start" : 1623760958288,
-        "stop" : 1623760960453,
-        "duration" : 2165
+        "start" : 1622793454590,
+        "stop" : 1622793454670,
+        "duration" : 80
       }
     } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "3a94242642eae270.json",
+  "source" : "b40ad17b82a1f31c.json",
   "parameterValues" : [ ]
 }

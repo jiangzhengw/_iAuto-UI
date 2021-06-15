@@ -19,7 +19,6 @@ class Index(BasePage):
 
     def login(self, ):
         """login"""
-        self._driver.get(self._base_url)
         interview = (By.LINK_TEXT, "面试")
         self.wait(5, interview)
         self.ele_click(interview)

@@ -1,12 +1,12 @@
 {
-  "uid" : "c26849213bb1eb29",
-  "name" : "test_demo1",
-  "fullName" : "case.test_case_demo1.TestCase#test_demo1",
-  "historyId" : "ae65685983dac9b485acf0c38bee5cab",
+  "uid" : "6b43b19924c47a44",
+  "name" : "test_demo2",
+  "fullName" : "case.test_case_demo1.TestCase#test_demo2",
+  "historyId" : "5720a23e85913b145cad80e48dff4485",
   "time" : {
-    "start" : 1622794121803,
-    "stop" : 1622794121880,
-    "duration" : 77
+    "start" : 1622793459234,
+    "stop" : 1622793459323,
+    "duration" : 89
   },
   "description" : "demo case",
   "descriptionHtml" : "<p>demo case</p>\n",
@@ -19,17 +19,17 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "3c9ef543ba5171fd",
+      "uid" : "2f6fcf027c9d86c4",
       "name" : "log",
-      "source" : "3c9ef543ba5171fd.txt",
+      "source" : "2f6fcf027c9d86c4.txt",
       "type" : "text/plain",
-      "size" : 3206
+      "size" : 3263
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
     "hasContent" : true,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -46,7 +46,7 @@
     "value" : "ceshi-jiangzhengwei-win"
   }, {
     "name" : "thread",
-    "value" : "19876-MainThread"
+    "value" : "19772-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -68,6 +68,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c26849213bb1eb29.json",
+  "source" : "6b43b19924c47a44.json",
   "parameterValues" : [ ]
 }

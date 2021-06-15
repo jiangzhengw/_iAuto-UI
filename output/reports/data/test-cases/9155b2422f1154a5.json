@@ -1,12 +1,12 @@
 {
-  "uid" : "4e0fe1f88536f991",
-  "name" : "test_demo2",
-  "fullName" : "case.test_case_demo1.TestCase#test_demo2",
-  "historyId" : "5720a23e85913b145cad80e48dff4485",
+  "uid" : "9155b2422f1154a5",
+  "name" : "test_demo1",
+  "fullName" : "case.test_case_demo1.TestCase#test_demo1",
+  "historyId" : "ae65685983dac9b485acf0c38bee5cab",
   "time" : {
-    "start" : 1622794366860,
-    "stop" : 1622794366950,
-    "duration" : 90
+    "start" : 1622793454590,
+    "stop" : 1622793454670,
+    "duration" : 80
   },
   "description" : "demo case",
   "descriptionHtml" : "<p>demo case</p>\n",
@@ -19,17 +19,17 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "a114077293ad2391",
+      "uid" : "a55031cd4ae7ce64",
       "name" : "log",
-      "source" : "a114077293ad2391.txt",
+      "source" : "a55031cd4ae7ce64.txt",
       "type" : "text/plain",
-      "size" : 3263
+      "size" : 3206
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
     "hasContent" : true,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -46,7 +46,7 @@
     "value" : "ceshi-jiangzhengwei-win"
   }, {
     "name" : "thread",
-    "value" : "22672-MainThread"
+    "value" : "19772-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -62,30 +62,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "77b530af0a4d768d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622794126607,
-        "stop" : 1622794126701,
-        "duration" : 94
-      }
-    }, {
-      "uid" : "e8b3c031b40d15f2",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622793459234,
-        "stop" : 1622793459323,
-        "duration" : 89
-      }
-    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "4e0fe1f88536f991.json",
+  "source" : "9155b2422f1154a5.json",
   "parameterValues" : [ ]
 }
