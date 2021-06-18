@@ -2,6 +2,7 @@
 # Author: jiangzhw
 # FileName: base_page.py
 import logging
+import shelve
 import time
 
 from selenium import webdriver
@@ -24,43 +25,51 @@ class BasePage:
         # 复用指定端口浏览器
         opt = Options()
         # opt.debugger_address = "127.0.0.1:9222"
+        # 启用无头浏览器模式
+        # opt.add_argument('--headless')
+        # 禁用gpu
+        # opt.add_argument('--disable-gpu')
 
         # 复用cookies
-        __cookies = [
-            {'domain': 'dhr.nowcoder.com', 'httpOnly': False, 'name': 'HRCLIENTID', 'path': '/', 'secure': False,
-             'value': 'dfd97ba6480d7d6a37263ff47beaba99'},
-            {'domain': 'dhr.nowcoder.com', 'httpOnly': False, 'name': 's', 'path': '/', 'secure': False,
-             'value': '5af9d32299f984a152376c19827f00c9'},
-            {'domain': '.nowcoder.com', 'expiry': 1626350711, 'httpOnly': False, 'name': 'hrat', 'path': '/',
-             'sameSite': 'None', 'secure': True,
-             'value': '2d22aa0e05401f9e882ec6474b498a9dbeca79ba34b958ea0b39b0e1177bd158'},
-            {'domain': '.nowcoder.com', 'expiry': 1623760757, 'httpOnly': False,
-             'name': 'c196c3667d214851b11233f5c17f99d5_gr_session_id_a511b848-316f-4009-ada5-c50ffaabe1d9', 'path': '/',
-             'secure': False, 'value': 'true'},
-            {'domain': '.nowcoder.com', 'httpOnly': False, 'name': 'Hm_lpvt_a808a1326b6c06c437de769d1b85b870',
-             'path': '/', 'secure': False, 'value': '1623758958'},
-            {'domain': '.nowcoder.com', 'expiry': 2249122747, 'httpOnly': True, 'name': 'experimentation_subject_id',
-             'path': '/', 'secure': False,
-             'value': 'Ijc5N2QzYjliLTQ5YzAtNGNiMy05MGY3LWNiYmYyZDU5Y2Q5OSI%3D--5a3057a42d3636dbb1986263061b64d79bc26628'},
-            {'domain': '.nowcoder.com', 'expiry': 1623760757, 'httpOnly': False,
-             'name': 'c196c3667d214851b11233f5c17f99d5_gr_session_id', 'path': '/', 'secure': False,
-             'value': 'a511b848-316f-4009-ada5-c50ffaabe1d9'},
-            {'domain': '.nowcoder.com', 'expiry': 1655294957, 'httpOnly': False,
-             'name': 'Hm_lvt_a808a1326b6c06c437de769d1b85b870', 'path': '/', 'secure': False,
-             'value': '1623738763,1623738771,1623740092,1623758922'},
-            {'domain': '.nowcoder.com', 'expiry': 3770628347, 'httpOnly': False, 'name': 'from', 'path': '/',
-             'sameSite': 'None', 'secure': True, 'value': '1'},
-            {'domain': '.nowcoder.com', 'expiry': 1633227874, 'httpOnly': False, 'name': 'NOWCODERUID', 'path': '/',
-             'sameSite': 'None', 'secure': True, 'value': 'EEA2B4CD83034712CF6A7978F389219F'},
-            {'domain': 'dhr.nowcoder.com', 'expiry': 1637374754, 'httpOnly': False, 'name': '_bl_uid', 'path': '/',
-             'secure': False, 'value': '5qkCgp8s1Idz7teyR6Cy6499dvwn'},
-            {'domain': '.nowcoder.com', 'expiry': 1933035874, 'httpOnly': False, 'name': 'NOWCODERCLINETID',
-             'path': '/', 'sameSite': 'None', 'secure': True, 'value': '5BBBF024161FD61595B01F4C7E680353'},
-            {'domain': '.nowcoder.com', 'expiry': 1938502026, 'httpOnly': False,
-             'name': 'c196c3667d214851b11233f5c17f99d5_gr_last_sent_cs1', 'path': '/', 'secure': False,
-             'value': '494088990'},
-            {'domain': '.nowcoder.com', 'expiry': 1939118957, 'httpOnly': False, 'name': 'gr_user_id', 'path': '/',
-             'secure': False, 'value': 'd11071d6-7afc-4f71-88c6-87cb8194b7a4'}]
+        # 将cookies存储到python自带数据库内
+        db = shelve.open("cookies")
+        # __cookies = [
+        #     {'domain': 'dhr.nowcoder.com', 'httpOnly': False, 'name': 'HRCLIENTID', 'path': '/', 'secure': False,
+        #      'value': 'dfd97ba6480d7d6a37263ff47beaba99'},
+        #     {'domain': 'dhr.nowcoder.com', 'httpOnly': False, 'name': 's', 'path': '/', 'secure': False,
+        #      'value': '5af9d32299f984a152376c19827f00c9'},
+        #     {'domain': '.nowcoder.com', 'expiry': 1626350711, 'httpOnly': False, 'name': 'hrat', 'path': '/',
+        #      'sameSite': 'None', 'secure': True,
+        #      'value': '2d22aa0e05401f9e882ec6474b498a9dbeca79ba34b958ea0b39b0e1177bd158'},
+        #     {'domain': '.nowcoder.com', 'expiry': 1623760757, 'httpOnly': False,
+        #      'name': 'c196c3667d214851b11233f5c17f99d5_gr_session_id_a511b848-316f-4009-ada5-c50ffaabe1d9', 'path': '/',
+        #      'secure': False, 'value': 'true'},
+        #     {'domain': '.nowcoder.com', 'httpOnly': False, 'name': 'Hm_lpvt_a808a1326b6c06c437de769d1b85b870',
+        #      'path': '/', 'secure': False, 'value': '1623758958'},
+        #     {'domain': '.nowcoder.com', 'expiry': 2249122747, 'httpOnly': True, 'name': 'experimentation_subject_id',
+        #      'path': '/', 'secure': False,
+        #      'value': 'Ijc5N2QzYjliLTQ5YzAtNGNiMy05MGY3LWNiYmYyZDU5Y2Q5OSI%3D--5a3057a42d3636dbb1986263061b64d79bc26628'},
+        #     {'domain': '.nowcoder.com', 'expiry': 1623760757, 'httpOnly': False,
+        #      'name': 'c196c3667d214851b11233f5c17f99d5_gr_session_id', 'path': '/', 'secure': False,
+        #      'value': 'a511b848-316f-4009-ada5-c50ffaabe1d9'},
+        #     {'domain': '.nowcoder.com', 'expiry': 1655294957, 'httpOnly': False,
+        #      'name': 'Hm_lvt_a808a1326b6c06c437de769d1b85b870', 'path': '/', 'secure': False,
+        #      'value': '1623738763,1623738771,1623740092,1623758922'},
+        #     {'domain': '.nowcoder.com', 'expiry': 3770628347, 'httpOnly': False, 'name': 'from', 'path': '/',
+        #      'sameSite': 'None', 'secure': True, 'value': '1'},
+        #     {'domain': '.nowcoder.com', 'expiry': 1633227874, 'httpOnly': False, 'name': 'NOWCODERUID', 'path': '/',
+        #      'sameSite': 'None', 'secure': True, 'value': 'EEA2B4CD83034712CF6A7978F389219F'},
+        #     {'domain': 'dhr.nowcoder.com', 'expiry': 1637374754, 'httpOnly': False, 'name': '_bl_uid', 'path': '/',
+        #      'secure': False, 'value': '5qkCgp8s1Idz7teyR6Cy6499dvwn'},
+        #     {'domain': '.nowcoder.com', 'expiry': 1933035874, 'httpOnly': False, 'name': 'NOWCODERCLINETID',
+        #      'path': '/', 'sameSite': 'None', 'secure': True, 'value': '5BBBF024161FD61595B01F4C7E680353'},
+        #     {'domain': '.nowcoder.com', 'expiry': 1938502026, 'httpOnly': False,
+        #      'name': 'c196c3667d214851b11233f5c17f99d5_gr_last_sent_cs1', 'path': '/', 'secure': False,
+        #      'value': '494088990'},
+        #     {'domain': '.nowcoder.com', 'expiry': 1939118957, 'httpOnly': False, 'name': 'gr_user_id', 'path': '/',
+        #      'secure': False, 'value': 'd11071d6-7afc-4f71-88c6-87cb8194b7a4'}]
+        # db['cookies'] = __cookies
+        cookies = db['cookies']
         if driver is None:
             self._driver = webdriver.Chrome(options=opt)
             self._driver.implicitly_wait(5)
@@ -68,14 +77,15 @@ class BasePage:
             self._driver = driver
         if self._base_url != "":
             self._driver.get(self._base_url)
-            for cookie in __cookies:
+            for cookie in cookies:
                 # 取消cookie的有效时长设置
                 if 'expiry' in cookie:
                     cookie.pop('expiry')
                 self._driver.add_cookie(cookie)
+            db.close()
             self._driver.get(self._base_url)
 
-    def set_cookies(self):
+    def get_cookies(self):
         """设置浏览器cookies"""
         pass
 

@@ -1,12 +1,12 @@
 {
-  "uid" : "c85bccb922833b9f",
-  "name" : "test_demo2",
-  "fullName" : "case.test_case_demo1.TestCase#test_demo2",
-  "historyId" : "5720a23e85913b145cad80e48dff4485",
+  "uid" : "d3e97d75c2b0c37c",
+  "name" : "test_demo1",
+  "fullName" : "case.test_case_demo1.TestCase#test_demo1",
+  "historyId" : "ae65685983dac9b485acf0c38bee5cab",
   "time" : {
-    "start" : 1622794366860,
-    "stop" : 1622794366950,
-    "duration" : 90
+    "start" : 1622794362214,
+    "stop" : 1622794362292,
+    "duration" : 78
   },
   "description" : "demo case",
   "descriptionHtml" : "<p>demo case</p>\n",
@@ -19,11 +19,11 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "54a9b234c3e85748",
+      "uid" : "7c6d1d8caac4f97d",
       "name" : "log",
-      "source" : "54a9b234c3e85748.txt",
+      "source" : "7c6d1d8caac4f97d.txt",
       "type" : "text/plain",
-      "size" : 3263
+      "size" : 3206
     } ],
     "parameters" : [ ],
     "hasContent" : true,
@@ -67,25 +67,25 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "f9e1abd9afd498b7",
+      "uid" : "64af2208aef01a9c",
       "status" : "passed",
       "time" : {
-        "start" : 1622794126607,
-        "stop" : 1622794126701,
-        "duration" : 94
+        "start" : 1622794121803,
+        "stop" : 1622794121880,
+        "duration" : 77
       }
     }, {
-      "uid" : "6b43b19924c47a44",
+      "uid" : "8f15e29d8acd9d8b",
       "status" : "passed",
       "time" : {
-        "start" : 1622793459234,
-        "stop" : 1622793459323,
-        "duration" : 89
+        "start" : 1622793454590,
+        "stop" : 1622793454670,
+        "duration" : 80
       }
     } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c85bccb922833b9f.json",
+  "source" : "d3e97d75c2b0c37c.json",
   "parameterValues" : [ ]
 }

@@ -3,7 +3,7 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "test_demo1",
-    "uid" : "b40ad17b82a1f31c",
+    "uid" : "d3e97d75c2b0c37c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -16,7 +16,7 @@
     "parameters" : [ ]
   }, {
     "name" : "test_demo2",
-    "uid" : "c85bccb922833b9f",
+    "uid" : "244db5725f9fce62",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -29,13 +29,13 @@
     "parameters" : [ ]
   }, {
     "name" : "test_login",
-    "uid" : "9d0446087e3dc46e",
+    "uid" : "557485c3b264d288",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1623762574772,
-      "stop" : 1623762574881,
-      "duration" : 109
+      "start" : 1623763492965,
+      "stop" : 1623763493038,
+      "duration" : 73
     },
     "flaky" : false,
     "newFailed" : false,

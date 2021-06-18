@@ -1,12 +1,12 @@
 {
-  "uid" : "9d0446087e3dc46e",
+  "uid" : "557485c3b264d288",
   "name" : "test_login",
   "fullName" : "case.test_index.TestCase1#test_login",
   "historyId" : "5b9e4507dceb784ed3745b5406359c8c",
   "time" : {
-    "start" : 1623762574772,
-    "stop" : 1623762574881,
-    "duration" : 109
+    "start" : 1623763492965,
+    "stop" : 1623763493038,
+    "duration" : 73
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,9 +16,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "348e40d517ba6092",
+      "uid" : "b50138524140595e",
       "name" : "log",
-      "source" : "348e40d517ba6092.txt",
+      "source" : "b50138524140595e.txt",
       "type" : "text/plain",
       "size" : 12109
     } ],
@@ -43,7 +43,7 @@
     "value" : "ceshi-jiangzhengwei-win"
   }, {
     "name" : "thread",
-    "value" : "5340-MainThread"
+    "value" : "13700-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -64,7 +64,23 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "c0bee17b88eb3f96",
+      "uid" : "3f0a2a17d9b1f865",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623763402021,
+        "stop" : 1623763402110,
+        "duration" : 89
+      }
+    }, {
+      "uid" : "25c4873cd446931e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623762574772,
+        "stop" : 1623762574881,
+        "duration" : 109
+      }
+    }, {
+      "uid" : "55b0c497b746de7d",
       "status" : "passed",
       "time" : {
         "start" : 1623762448921,
@@ -72,7 +88,7 @@
         "duration" : 1619
       }
     }, {
-      "uid" : "6d90f792f432cd60",
+      "uid" : "f9f387c4c24311ca",
       "status" : "passed",
       "time" : {
         "start" : 1623761528254,
@@ -80,7 +96,7 @@
         "duration" : 1214
       }
     }, {
-      "uid" : "bdd91c0bb3bc0d64",
+      "uid" : "4fd050c02d362dab",
       "status" : "passed",
       "time" : {
         "start" : 1623761063493,
@@ -88,7 +104,7 @@
         "duration" : 2309
       }
     }, {
-      "uid" : "c6ae82426e781cbb",
+      "uid" : "81ce6900d43cf9cf",
       "status" : "passed",
       "time" : {
         "start" : 1623760958288,
@@ -99,6 +115,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9d0446087e3dc46e.json",
+  "source" : "557485c3b264d288.json",
   "parameterValues" : [ ]
 }
