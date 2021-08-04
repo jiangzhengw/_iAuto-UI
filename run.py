@@ -5,7 +5,7 @@ import os
 
 import pytest
 
-from common.log import Logger
+from utils.log import Logger
 
 
 def main():

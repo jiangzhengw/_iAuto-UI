@@ -1,6 +1,6 @@
 # Time: 2021/6/2 14:56
 # Author: jiangzhw
-# FileName: base_page.py
+# FileName: base_api.py
 import logging
 import shelve
 import time
@@ -13,7 +13,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 logger = logging.getLogger("Main.BasePage")
 
 
-class BasePage:
+
+class BaseAPI:
     """BASIC Page"""
     _base_url = ""
 
