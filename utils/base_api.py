@@ -34,6 +34,8 @@ class BaseAPI:
         # 复用cookies
         # 将cookies存储到python自带数据库内
         db = shelve.open("cookies")
+        # # 获取登录账号cookie
+        # self._driver.get_cookies()
         # __cookies = [
         #     {'domain': 'dhr.nowcoder.com', 'httpOnly': False, 'name': 'HRCLIENTID', 'path': '/', 'secure': False,
         #      'value': 'dfd97ba6480d7d6a37263ff47beaba99'},
