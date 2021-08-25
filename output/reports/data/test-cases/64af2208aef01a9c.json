@@ -1,26 +1,29 @@
 {
-  "uid" : "c6ae82426e781cbb",
-  "name" : "test_login",
-  "fullName" : "case.test_index.TestCase1#test_login",
-  "historyId" : "5b9e4507dceb784ed3745b5406359c8c",
+  "uid" : "64af2208aef01a9c",
+  "name" : "test_demo1",
+  "fullName" : "case.test_case_demo1.TestCase#test_demo1",
+  "historyId" : "ae65685983dac9b485acf0c38bee5cab",
   "time" : {
-    "start" : 1623760958288,
-    "stop" : 1623760960453,
-    "duration" : 2165
+    "start" : 1622794121803,
+    "stop" : 1622794121880,
+    "duration" : 77
   },
+  "description" : "demo case",
+  "descriptionHtml" : "<p>demo case</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
+    "description" : "demo case",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "428c452b810219",
+      "uid" : "522e8b1af76dc75",
       "name" : "log",
-      "source" : "428c452b810219.txt",
+      "source" : "522e8b1af76dc75.txt",
       "type" : "text/plain",
-      "size" : 12352
+      "size" : 3206
     } ],
     "parameters" : [ ],
     "hasContent" : true,
@@ -34,16 +37,16 @@
     "value" : "case"
   }, {
     "name" : "suite",
-    "value" : "test_index"
+    "value" : "test_case_demo1"
   }, {
     "name" : "subSuite",
-    "value" : "TestCase1"
+    "value" : "TestCase"
   }, {
     "name" : "host",
     "value" : "ceshi-jiangzhengwei-win"
   }, {
     "name" : "thread",
-    "value" : "6528-MainThread"
+    "value" : "19876-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -52,7 +55,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "case.test_index"
+    "value" : "case.test_case_demo1"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -65,6 +68,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c6ae82426e781cbb.json",
+  "source" : "64af2208aef01a9c.json",
   "parameterValues" : [ ]
 }

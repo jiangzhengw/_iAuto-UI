@@ -1,12 +1,12 @@
 {
-  "uid" : "c0bee17b88eb3f96",
+  "uid" : "25c4873cd446931e",
   "name" : "test_login",
   "fullName" : "case.test_index.TestCase1#test_login",
   "historyId" : "5b9e4507dceb784ed3745b5406359c8c",
   "time" : {
-    "start" : 1623762448921,
-    "stop" : 1623762450540,
-    "duration" : 1619
+    "start" : 1623762574772,
+    "stop" : 1623762574881,
+    "duration" : 109
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,9 +16,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "1f3cd5faa8bf5f23",
+      "uid" : "255b197bf98f33b4",
       "name" : "log",
-      "source" : "1f3cd5faa8bf5f23.txt",
+      "source" : "255b197bf98f33b4.txt",
       "type" : "text/plain",
       "size" : 12109
     } ],
@@ -43,7 +43,7 @@
     "value" : "ceshi-jiangzhengwei-win"
   }, {
     "name" : "thread",
-    "value" : "8344-MainThread"
+    "value" : "5340-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -65,6 +65,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c0bee17b88eb3f96.json",
+  "source" : "25c4873cd446931e.json",
   "parameterValues" : [ ]
 }

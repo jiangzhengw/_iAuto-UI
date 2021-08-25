@@ -1,12 +1,12 @@
 {
-  "uid" : "bdd91c0bb3bc0d64",
+  "uid" : "55b0c497b746de7d",
   "name" : "test_login",
   "fullName" : "case.test_index.TestCase1#test_login",
   "historyId" : "5b9e4507dceb784ed3745b5406359c8c",
   "time" : {
-    "start" : 1623761063493,
-    "stop" : 1623761065802,
-    "duration" : 2309
+    "start" : 1623762448921,
+    "stop" : 1623762450540,
+    "duration" : 1619
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,11 +16,11 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "6cd8bc30ad8a99e5",
+      "uid" : "f2b0a91e77b71bf2",
       "name" : "log",
-      "source" : "6cd8bc30ad8a99e5.txt",
+      "source" : "f2b0a91e77b71bf2.txt",
       "type" : "text/plain",
-      "size" : 12352
+      "size" : 12109
     } ],
     "parameters" : [ ],
     "hasContent" : true,
@@ -43,7 +43,7 @@
     "value" : "ceshi-jiangzhengwei-win"
   }, {
     "name" : "thread",
-    "value" : "5932-MainThread"
+    "value" : "8344-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -65,6 +65,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "bdd91c0bb3bc0d64.json",
+  "source" : "55b0c497b746de7d.json",
   "parameterValues" : [ ]
 }

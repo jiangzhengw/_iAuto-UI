@@ -1,29 +1,26 @@
 {
-  "uid" : "57e36b4f5cc6933a",
-  "name" : "test_demo1",
-  "fullName" : "case.test_case_demo1.TestCase#test_demo1",
-  "historyId" : "ae65685983dac9b485acf0c38bee5cab",
+  "uid" : "81ce6900d43cf9cf",
+  "name" : "test_login",
+  "fullName" : "case.test_index.TestCase1#test_login",
+  "historyId" : "5b9e4507dceb784ed3745b5406359c8c",
   "time" : {
-    "start" : 1622794121803,
-    "stop" : 1622794121880,
-    "duration" : 77
+    "start" : 1623760958288,
+    "stop" : 1623760960453,
+    "duration" : 2165
   },
-  "description" : "demo case",
-  "descriptionHtml" : "<p>demo case</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
-    "description" : "demo case",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "9b1929618a1b75cd",
+      "uid" : "ab0ffa77e7c4e0de",
       "name" : "log",
-      "source" : "9b1929618a1b75cd.txt",
+      "source" : "ab0ffa77e7c4e0de.txt",
       "type" : "text/plain",
-      "size" : 3206
+      "size" : 12352
     } ],
     "parameters" : [ ],
     "hasContent" : true,
@@ -37,16 +34,16 @@
     "value" : "case"
   }, {
     "name" : "suite",
-    "value" : "test_case_demo1"
+    "value" : "test_index"
   }, {
     "name" : "subSuite",
-    "value" : "TestCase"
+    "value" : "TestCase1"
   }, {
     "name" : "host",
     "value" : "ceshi-jiangzhengwei-win"
   }, {
     "name" : "thread",
-    "value" : "19876-MainThread"
+    "value" : "6528-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -55,7 +52,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "case.test_case_demo1"
+    "value" : "case.test_index"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -68,6 +65,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "57e36b4f5cc6933a.json",
+  "source" : "81ce6900d43cf9cf.json",
   "parameterValues" : [ ]
 }

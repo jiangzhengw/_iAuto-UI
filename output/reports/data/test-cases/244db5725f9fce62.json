@@ -1,12 +1,12 @@
 {
-  "uid" : "b40ad17b82a1f31c",
-  "name" : "test_demo1",
-  "fullName" : "case.test_case_demo1.TestCase#test_demo1",
-  "historyId" : "ae65685983dac9b485acf0c38bee5cab",
+  "uid" : "244db5725f9fce62",
+  "name" : "test_demo2",
+  "fullName" : "case.test_case_demo1.TestCase#test_demo2",
+  "historyId" : "5720a23e85913b145cad80e48dff4485",
   "time" : {
-    "start" : 1622794362214,
-    "stop" : 1622794362292,
-    "duration" : 78
+    "start" : 1622794366860,
+    "stop" : 1622794366950,
+    "duration" : 90
   },
   "description" : "demo case",
   "descriptionHtml" : "<p>demo case</p>\n",
@@ -19,11 +19,11 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "21c5b5a2ccad2eeb",
+      "uid" : "497a28b39951d5e",
       "name" : "log",
-      "source" : "21c5b5a2ccad2eeb.txt",
+      "source" : "497a28b39951d5e.txt",
       "type" : "text/plain",
-      "size" : 3206
+      "size" : 3263
     } ],
     "parameters" : [ ],
     "hasContent" : true,
@@ -67,25 +67,25 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "57e36b4f5cc6933a",
+      "uid" : "63789f90bea117c9",
       "status" : "passed",
       "time" : {
-        "start" : 1622794121803,
-        "stop" : 1622794121880,
-        "duration" : 77
+        "start" : 1622794126607,
+        "stop" : 1622794126701,
+        "duration" : 94
       }
     }, {
-      "uid" : "9155b2422f1154a5",
+      "uid" : "956169f0e46f9d7a",
       "status" : "passed",
       "time" : {
-        "start" : 1622793454590,
-        "stop" : 1622793454670,
-        "duration" : 80
+        "start" : 1622793459234,
+        "stop" : 1622793459323,
+        "duration" : 89
       }
     } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b40ad17b82a1f31c.json",
+  "source" : "244db5725f9fce62.json",
   "parameterValues" : [ ]
 }
