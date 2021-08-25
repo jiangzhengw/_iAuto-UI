@@ -10,7 +10,7 @@ from pageobj.base_page import BasePage
 class Index(BasePage):
     """nowcoder index pageobj"""
     # _base_url = "https://www.baidu.com/"
-    _base_url = "https://dhr.nowcoder.com/console"
+    _base_url = "https://dhr.nowcoder.com/console#resume/%22action%22%3A%22position%2FeditProject%2Findex%22"
 
     def search(self, msg):
         """login click"""

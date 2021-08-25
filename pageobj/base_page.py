@@ -23,7 +23,7 @@ class BasePage:
         """
         # 复用指定端口浏览器
         opt = Options()
-        # opt.debugger_address = "127.0.0.1:9222"
+        opt.debugger_address = "127.0.0.1:9222"
 
         # 复用cookies
         __cookies = [
@@ -68,12 +68,12 @@ class BasePage:
             self._driver = driver
         if self._base_url != "":
             self._driver.get(self._base_url)
-            for cookie in __cookies:
-                # 取消cookie的有效时长设置
-                if 'expiry' in cookie:
-                    cookie.pop('expiry')
-                self._driver.add_cookie(cookie)
-            self._driver.get(self._base_url)
+            # for cookie in __cookies:
+            #     # 取消cookie的有效时长设置
+            #     if 'expiry' in cookie:
+            #         cookie.pop('expiry')
+            #     self._driver.add_cookie(cookie)
+            # self._driver.get(self._base_url)
 
     def set_cookies(self):
         """设置浏览器cookies"""
