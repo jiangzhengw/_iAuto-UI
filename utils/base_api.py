@@ -13,7 +13,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 logger = logging.getLogger("Main.BasePage")
 
 
-
 class BaseAPI:
     """BASIC Page"""
     _base_url = ""
