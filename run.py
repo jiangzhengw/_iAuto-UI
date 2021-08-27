@@ -5,8 +5,6 @@ import os
 
 import pytest
 
-from common.log import Logger
-
 
 def main():
     """运行pytest用例集"""

@@ -1,7 +1,7 @@
 # Time: 2021/8/20 17:32
 # Author: jiangzhw
 # FileName: position_management.py
-
+from selenium.common.exceptions import StaleElementReferenceException
 from selenium.webdriver.common.by import By
 
 from common.common import get_ini_config
@@ -32,7 +32,7 @@ class PositionManagement(BasePage):
         """点击新建按钮"""
         add_icon = (By.CSS_SELECTOR, '.ico-plus')
         self.find_element(add_icon).click()
-        return AddRecruitmentPro(self.driver)
+        return AddRecruitmentPro(self._driver)
 
     def open_recruitment_project(self, project_name):
         """
@@ -48,4 +48,10 @@ class PositionManagement(BasePage):
     def back_to_project(self):
         """返回项目列表"""
         back = (By.CSS_SELECTOR, 'a.link-green.mr2')
-        self.find_element(back).click()
+        attempts = 0
+        while attempts < 2:
+            try:
+                self.find_element(back).click()
+                break
+            except StaleElementReferenceException:
+                attempts += 1
