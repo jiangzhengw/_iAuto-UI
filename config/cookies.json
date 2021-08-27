@@ -1,0 +1,99 @@
+[
+  {
+    "domain": ".nowcoder.com",
+    "httpOnly": false,
+    "name": "Hm_lpvt_a808a1326b6c06c437de769d1b85b870",
+    "path": "/",
+    "secure": false,
+    "value": "1630057697"
+  },
+  {
+    "domain": ".nowcoder.com",
+    "httpOnly": false,
+    "name": "hrId",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "358525"
+  },
+  {
+    "domain": ".nowcoder.com",
+    "expiry": 1632649696,
+    "httpOnly": false,
+    "name": "hrat",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "70db98da0ba2dad59ecf2fcfcab89b8f3e86c421e958a3204cc1337eafd4f3dd"
+  },
+  {
+    "domain": ".nowcoder.com",
+    "expiry": 1630059497,
+    "httpOnly": false,
+    "name": "c196c3667d214851b11233f5c17f99d5_gr_session_id_8fc5d1bb-5314-41a4-8901-dfc977d20158",
+    "path": "/",
+    "secure": false,
+    "value": "true"
+  },
+  {
+    "domain": "hr.nowcoder.com",
+    "httpOnly": false,
+    "name": "s",
+    "path": "/",
+    "secure": false,
+    "value": "1eb16f37dad339ec5c83a49c0b7d1277"
+  },
+  {
+    "domain": ".nowcoder.com",
+    "expiry": 1945417697,
+    "httpOnly": false,
+    "name": "gr_user_id",
+    "path": "/",
+    "secure": false,
+    "value": "eedd5788-aac0-4e45-9460-2f23886f8eac"
+  },
+  {
+    "domain": ".nowcoder.com",
+    "expiry": 1661593697,
+    "httpOnly": false,
+    "name": "Hm_lvt_a808a1326b6c06c437de769d1b85b870",
+    "path": "/",
+    "secure": false,
+    "value": "1630057678"
+  },
+  {
+    "domain": ".nowcoder.com",
+    "httpOnly": false,
+    "name": "gray",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "0"
+  },
+  {
+    "domain": ".nowcoder.com",
+    "expiry": 1630059497,
+    "httpOnly": false,
+    "name": "c196c3667d214851b11233f5c17f99d5_gr_session_id",
+    "path": "/",
+    "secure": false,
+    "value": "8fc5d1bb-5314-41a4-8901-dfc977d20158"
+  },
+  {
+    "domain": "hr.nowcoder.com",
+    "expiry": 1645609678,
+    "httpOnly": false,
+    "name": "_bl_uid",
+    "path": "/",
+    "secure": false,
+    "value": "sXkh7sL8u096sI97760w7wkmXse5"
+  },
+  {
+    "domain": "hr.nowcoder.com",
+    "httpOnly": false,
+    "name": "HRCLIENTID",
+    "path": "/",
+    "secure": false,
+    "value": "d323934a62227c910c3fadc1b674fa82"
+  }
+]
