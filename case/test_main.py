@@ -1,7 +1,7 @@
 # Time: 2021/8/27 18:06
 # Author: jiangzhw
 # FileName: test_main.py
-from pageobj.main import Main
+from page.main import Main
 
 
 class TestMain:

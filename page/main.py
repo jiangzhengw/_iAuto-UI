@@ -5,7 +5,7 @@ import configparser
 
 from selenium.webdriver.common.by import By
 
-from pageobj.base_page import BasePage
+from page.base_page import BasePage
 
 
 class Main(BasePage):
