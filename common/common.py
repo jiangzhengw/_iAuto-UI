@@ -2,9 +2,12 @@
 # Author: jiangzhw
 # FileName: common.py
 import configparser
+import inspect
 import os
 import platform
 
+import pytest
+from _pytest.mark import ParameterSet
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
@@ -58,6 +61,46 @@ def auto_driver(driver_type='chrome'):
             driver_path = 'geckodriver'
         driver = webdriver.Firefox(executable_path=driver_path)
     return driver
+
+
+def init_browser(driver_type='chrome'):
+    """
+    关键字驱动启动浏览器driver替代if else小优化
+    :param driver_type:浏览器类型
+    :return:web driver
+    """
+    driver_dict = {
+        'chrome': webdriver.Chrome,
+        'firefox': webdriver.Firefox,
+        'ie': webdriver.Ie
+    }
+    driver = driver_dict[driver_type]()
+    return driver
+
+
+def auto_parametrize(arg_values, *args, **kwargs):
+    # TODO:将装饰器改成 @pytest.auto_parametrize()方式调用
+    """pytest.mark.parametrize参数化优化"""
+
+    def decorator(func):
+        try:
+            arg_value = arg_values[0]
+        except IndexError:
+            raise ValueError('argvalues must be non-empty')
+        except TypeError:
+            raise TypeError('argvalues must be a sequence')
+        arg_value = ParameterSet.extract_from(arg_value).values
+        arg_spec = inspect.getfullargspec(func)[0]
+        if 'self' in arg_spec:
+            arg_spec.remove('self')
+        if isinstance(arg_value, (list, tuple)):
+            arg_names = arg_spec[:len(arg_value)]
+        else:
+            arg_names = arg_spec[0]
+        return pytest.mark.parametrize(
+            arg_names, arg_values, *args, **kwargs)(func)
+
+    return decorator
 
 
 if __name__ == '__main__':
