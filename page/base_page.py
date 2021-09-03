@@ -1,10 +1,13 @@
 # Time: 2021/6/2 14:56
 # Author: jiangzhw
 # FileName: base_page.py
+import base64
 import json
 import time
 import traceback
 
+import requests
+from PIL import Image
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webdriver import WebDriver
@@ -242,3 +245,51 @@ class BasePage:
         :return:value
         """
         pass
+
+    def save_screen(self, file_name):
+        """
+        全屏截图
+        :param file_name:文件名字
+        :return:null
+        """
+        self._driver.save_screenshot(f'../output/screenshot/{file_name}.png')
+
+    def screen_part(self, locator, file_name):
+        """
+        部分截图
+        :param file_name: 截图文件名
+        :param locator:定位
+        :return: null
+        """
+        self.find_element(locator).screenshot(f'../output/screenshot/{file_name}.png')
+
+    def screen_part_v2(self, locator, file_name):
+        """
+        部分截图v2
+        :param file_name: 截图文件名
+        :param locator:定位
+        :return: null
+        """
+        self._driver.save_screenshot('all.png')
+        left = locator.location['x']
+        top = locator.location['y']
+        right = locator.location['x'] + locator.size['width']
+        bottom = locator.location['y'] + locator.size['height']
+        im = Image.open('all.png')
+        im = im.crop((left, top, right, bottom))
+        im.save(f'../output/screenshot/{file_name}.png')
+
+    def screen_part_v3(self, locator, file_name):
+        """
+        部分截图v3
+        :param locator:定位
+        :param file_name:截图文件名
+        :return:null
+        """
+        session_id = self._driver.session_id
+        r = requests.get(f'http://localhost:9102/session/{session_id}/element/{locator.id}/screenshot')
+        print(r.status_code)
+        print(r.text)
+        with open(f'../output/screenshot/{file_name}.png', 'wb') as f:
+            img_data = base64.b64decode(r.json()["value"])
+            f.write(img_data)
