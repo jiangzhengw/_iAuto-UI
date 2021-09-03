@@ -246,6 +246,19 @@ class BasePage:
         """
         pass
 
+    def double_click(self, locator):
+        """
+        双击元素
+        :param locator:定位
+        :return:null
+        """
+        try:
+            ActionChains(self._driver).double_click(locator).perform()
+            LOG.info(f'双击元素:{locator}')
+        except Exception as e:
+            LOG.error(f'双击元素：{locator}失败')
+            raise e
+
     def save_screen(self, file_name):
         """
         全屏截图
