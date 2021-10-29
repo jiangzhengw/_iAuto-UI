@@ -38,6 +38,18 @@ class BasePage:
                 # opt.add_argument('--disable-gpu')
                 # 无界面情况下可以使用以下代码
                 # chrome_options.add_argument('--headless')
+                # 加载用户配置文件
+                # path = r'C:\Users\nowcoder\AppData\Local\Google\Chrome\User Data\Default'
+                # chrome_options.add_argument('--user-data-dir='+path)
+                # 以最高权限运行
+                # chrome_options.add_argument('–no - sandbox')
+                # 设置启用配置项
+                chrome_options.add_experimental_option("prefs", {
+                    "profile.default_content_setting_values.media_stream_mic": 1,  # 1:allow, 2:block
+                    "profile.default_content_setting_values.media_stream_camera": 1,  # 1:allow, 2:block
+                    "profile.default_content_setting_values.geolocation": 1,  # 1:allow, 2:block
+                    "profile.default_content_setting_values.notifications": 1  # 1:allow, 2:block
+                })
                 chrome_options.add_argument('--disable-gpu')
                 self._driver = webdriver.Chrome(options=chrome_options)
             elif browser in ['firefox', 'FireFox', 'Firefox', 'FIREFOX']:
@@ -302,7 +314,10 @@ class BasePage:
         session_id = self._driver.session_id
         r = requests.get(f'http://localhost:9102/session/{session_id}/element/{locator.id}/screenshot')
         print(r.status_code)
-        print(r.text)
         with open(f'../output/screenshot/{file_name}.png', 'wb') as f:
             img_data = base64.b64decode(r.json()["value"])
             f.write(img_data)
+
+    def switch_frame(self):
+        """"""
+        self._driver.switch_to.frame()
