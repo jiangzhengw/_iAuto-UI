@@ -5,8 +5,6 @@ import os
 
 import pytest
 
-from utils.log import Logger
-
 
 def main():
     """运行pytest用例集"""
@@ -18,5 +16,4 @@ def main():
 
 
 if __name__ == "__main__":
-    log = Logger().log("Main")  # 初始化log配置
     main()  # 运行pytest测试集
