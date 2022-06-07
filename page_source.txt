@@ -1,523 +1,209 @@
-<html><head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="阿里邮箱是阿里云自主研发，基于阿里云基础组件部署，基于云计算原生公有云服务的邮件运营商">
-    <meta name="keywords" content="">
-    <link rel="shortcut icon" href="/static/0.1.30/images/favicon.ico" type="image/x-icon">
-    <link rel="bookmark" href="/static/0.1.30/images/favicon.ico" type="image/x-icon">
-    <title>邮箱用户登录-阿里邮箱提供技术支持</title>
-    <link rel="stylesheet" type="text/css" href="/static/0.1.30/login/default/styles/login.css">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <script type="text/javascript">
+                CONFIG={
+            checkCodeUrl:"http://pin2.aliyun.com/get_img?type=150_40&identity=mailsso.mxhichina.com&sessionid=",
+            csrfKey:"_tb_token_",
+            csrfToken:"3jJGUOeIEw"
+        }
+            </script>
+    <script src="/home/js/jquery.1.5.2.min.js" type="text/javascript"></script>
 
-    <style type="text/css">
-        html, body {
+</head><body>
+    
+
+
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/home/css/webmail_login.css">
+    <script src="/home/js/jquery.1.5.2.min.js" type="text/javascript"></script>
+    <style>
+        .dingding-login-tab {
+            height: 50px;
             width: 100%;
-            height: 100%;
-        }
-
-        body {
-            min-height: 800px;
-        }
-
-        .login_bg_full {
-            min-width: 1000px;
-        }
-
-        .login_bg_full .content {
-            height : auto;
-            font-size : 0;
-            background-image: none;
-            overflow : hidden;
-            min-height: 560px;
-            max-height: calc(100vh - 124px);
-        }
-
-        .content_inner .login_pannel {
-            right: 12px;
-            top: 55px;
-            bottom: 52px;
-        }
-
-        .login_bg_full .login_pannel {
-            top : 80px;
-            height: 400px;
-        }
-
-        .login_bg_full .login_welcome {
-            top : 50%;
-            margin-top : -150px;
-        }
-
-        .login_bg_full .footer {
-            position : relative;
-            right : 0;
-            left : 0;
-            width : auto;
-            padding-top: 16px;
-        }
-
-        .header .links_item {
-            border: 0 none;
-            padding: 0;
-        }
-
-        .header .links_item:before {
-            content: "";
-            display: inline-block;
-            width: 1px;
-            height: 12px;
-            background-color: #dcdcdc;
-            vertical-align: middle;
-            margin-top: -8px;
-        }
-
-        .header .links_item_first:before {
-            background-color: transparent;
-        }
-
-        .header .logo {
-            left: 0;
-        }
-
-        .content_inner .login_company_desc {
-            left: 0;
-            top: 80px;
-        }
-
-        .login_bg_full .content_inner {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            margin-left: -500px;
-        }
-
-        .header .links_wrap {
+            border-bottom: solid 1px #e7e8e8;
             font-size: 0;
-            bottom: 14px;
-            right: 0;
+            background-color: #fff;
         }
 
-        .links_item a {
-            font-size: 12px;
-            padding: 0 12px;
-        }
-
-        .login_bg_full #page {
-            height: 100%;
+        .dingding-mail-login-option {
+            line-height: 58px;
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            vertical-align: top;
+            cursor: pointer;
+            font-size: 0;
+            height: 48px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
             position: relative;
         }
 
-        .login_full_image {
-            width: 100%;
-            position: relative;
+        .dingding-option-curr {
+            border-bottom: solid 3px #36a7f4;
+            color: #3698fb;
+        }
+
+        .dingding-mail-login-option div{
+            display: inline-block;
+            color: #7e8185;
+            font-size: 14px;
+            /*padding-left: 30px;*/
+            vertical-align: middle;
+            line-height: 48px;
+        }
+
+        .dingding-mail-login-option div i {
+            position: absolute;
+            width: 24px;
+            height: 24px;
             top: 0;
             left: 0;
+            display: none;
+            margin-top: 13px;
+        }
+
+        .dingding-mail-login-option-m i {
+            background: url(/home/images/dingding/logo_mail_ding.png) no-repeat;
+        }
+
+        .dingding-mail-login-option-d i {
+            background: url(/home/images/dingding/logo_mail_ding.png) no-repeat 100% 0;
+        }
+
+        .dingding-mail-login-content-m, .dingding-mail-login-content-d {
+            position: relative;
+            background-color: #fff;
+        }
+
+        .dingding-login-only-account .dingding-mail-login-option-m {
+            width: 100%;
+        }
+
+        .dingding-login-only-account .dingding-mail-login-option-d {
+            display: none;
+        }
+
+        .dingding_mail_divide_line {
+            position: absolute;
+            top: 14px;
+            left: 0;
+            width: 1px;
+            height: 24px;
+            background-color: #dddddd;
+        }
+        
+        .dingtalk-login-client-download {
+            color: #898d90;
+            text-align: center;
+            position: absolute;
+            bottom: 0; 
+            width: 100%;
         }
     </style>
-<style></style></head>
-<body>
-        <div style="display:none;">
-        <iframe name="errorTargetIframe" id="errorTargetIframe" src="/static/blank.html"></iframe>
-        <form name="browser_log" id="browser_script_log" action="/alimail/error/browserLog" target="errorTargetIframe" method="post">
-            <input type="hidden" id="browser_script_log_text" name="text">
-            <input type="hidden" name="key" value="SCRIPT_LOAD_ERROR">
-        </form>
+
+
+<div class="dingding-mail-login">
+    <div class="dingding-login-tab dingding-login-only-account">
+        <div class="dingding-mail-login-option dingding-mail-login-option-m dingding-option-curr" title="邮箱帐号登录"><div><i></i>邮箱帐号登录</div></div>
+        <div class="dingding-mail-login-option dingding-mail-login-option-d" title="钉钉帐号登录"><div class="dingding_mail_divide_line"></div><div><i></i>钉钉帐号登录</div></div>
     </div>
-
-    <script type="text/javascript" nonce="">
-        function reportScriptError(name) {
-            var formNode = document.getElementById("browser_script_log");
-
-            document.getElementById("browser_script_log_text").value = name;
-
-            formNode.action = "\/alimail\/error\/browserLog?_timestamp_=" + (new Date().getTime());
-            formNode.submit();
-        }
-    </script>
-<!--[if lte IE 8]>
-        <script type="text/javascript" src="/static/0.1.30/scripts/es5-shim.min.js" onerror="javascript:reportScriptError('\/static\/0.1.30\/scripts\/es5-shim.min.js');"></script>
-        <script type="text/javascript" src="/static/0.1.30/scripts/es5-sham.min.js" onerror="javascript:reportScriptError('\/static\/0.1.30\/scripts\/es5-sham.min.js');"></script>
-<![endif]-->
-        <script type="text/javascript" src="/static/0.1.30/dist/sqm-dom.js" onerror="javascript:reportScriptError('\/static\/0.1.30\/dist\/sqm-dom.js');"></script>
-    <div style="display:none;">
-    <iframe name="errorTargetIframe" id="errorTargetIframe" src="/static/blank.html"></iframe>
-    <form name="browser_log" id="browser_log" action="/alimail/error/browserLog" target="errorTargetIframe" method="post">
-        <input type="hidden" id="browser_log_text" name="text">
-    </form>
+    <div class="dingding-mail-login-content-m">
+        <iframe id="ding-login-iframe" allowtransparency="true" class="login_panel_iframe" frameborder="0" src="/login.htm?app_code=smartmail&amp;lang=zh_CN&amp;redirect_url=http%3A%2F%2Fmail.hichina.com%2Falimail%2Fauth%2FcallbackForCore%3Freurl%3D%252Falimail%252F&amp;network_env=1&amp;sign=d9f39a37c35087c5fb089fda67c1dedc&amp;device_id=a572b786d9f54322b41027f76c055bb8"></iframe>
+    </div>
+    <div class="dingding-mail-login-content-d" style="display: none">
+        <div id="login_container"></div>
+        <div class="dingtalk-login-client-download">
+            还没有钉钉？
+            <a href="https://www.dingtalk.com/download?source=yx-wangye&amp;lwfrom=201712020209206421073200590" style="color: #38adff" target="_blank">
+            立即下载
+            </a>
+        </div>
+    </div>
 </div>
-
-<script type="text/javascript" nonce="">
-
-window.onerror = function (msg, url, line, col, error) {
-    try {
-        var text = "msg:[" + msg + "], url:[" + url + "], line:[" + line + "], col:[" + col + "]";
-        var formNode = document.getElementById("browser_log");
-        var fn = window.globalErrFunc;
-
-        fn && fn(text);
-
-        document.getElementById("browser_log_text").value = text;
-
-        formNode.action = "\/alimail\/error\/browserLog?_timestamp_=" + (new Date().getTime());
-        formNode.submit();
-    } catch (e) {}
-
-    return false;
-};
-
-</script>
-    <script type="text/javascript" nonce="">
-    function goToNoneCdn(w) {
-        var pn = w.location.pathname;
-        var qs = w.location.search;
-        var ph = w.location.hash;
-
-        if (qs.indexOf('?') == 0) {
-            qs = qs.substring(1);
-        }
-
-        if (ph.indexOf('#') == 0) {
-            ph = ph.substring(1);
-        }
-
-        var reurl = pn;
-
-        if (qs.length > 0) {
-            reurl += "?" + qs;
-        }
-
-        var targetUrl = '\/alimail\/auth\/redirectNoneCdn';
-
-        targetUrl = targetUrl + "?reurl=" + encodeURIComponent(reurl) + "#" + ph;
-
-        w.location.href = targetUrl;
-    }
-</script>
-
+<script>
+            $(".dingding-login-tab").addClass("dingding-login-only-account");
     
-    <script type="text/javascript" nonce="">
+    var gotoUrl = [];
+    gotoUrl.push("https://oapi.dingtalk.com/connect/oauth2/sns_authorize");
+    gotoUrl.push("?appid=dingoa1xatmxhthg1jbwef");
+    gotoUrl.push("&response_type=code");
+    gotoUrl.push("&scope=snsapi_login");
+    gotoUrl.push("&state=", (new Date()).getTime());
 
-var domUtils = sqm.dom.domUtils.main;
+    var redirectParams = [];
 
-function getEl(s, el) {
-    return domUtils.find(el || document.body, s);
-}
+                redirectParams.push("lang=" + encodeURIComponent("zh_CN"));
+        
+                redirectParams.push("app_code=" + encodeURIComponent("smartmail"));
+        
+                redirectParams.push("redirect_url=" + encodeURIComponent("http://mail.hichina.com/alimail/auth/callbackForCore?reurl=%2Falimail%2F"));
+        
+    gotoUrl.push("&redirect_uri=" + encodeURIComponent("https://mailsso.mxhichina.com/loginByDingTalkQRCode.htm?" + redirectParams.join("&")));
 
-function checkFocus(f, showError) {
-    var usernameNode = getEl("#username");
+    if (window.DDLogin) {
+        var obj = DDLogin({
+            id:"login_container",
+            goto: encodeURIComponent(gotoUrl.join("")),
+            style: "border:none;background-color:#FFFFFF;margin-top: 2px;",
+            width : "338",
+            height: "320"
+        });
+    }
 
-    if (!usernameNode.value) {
-        if (showError) {
-            var errLineNode = getEl("#login_error_line");
+    $(".dingding-mail-login-option-m").bind("click", function () {
+        $(".dingding-mail-login-option-d").removeClass("dingding-option-curr");
+        $(this).addClass("dingding-option-curr");
+        $(".dingding-mail-login-content-m").show();
+        $(".dingding-mail-login-content-d").hide();
+    })
 
-            domUtils.show(errLineNode);
-            domUtils.setText(getEl(".login_error_text", errLineNode), "请输入用户名");
+    $(".dingding-mail-login-option-d").bind("click", function () {
+        $(".dingding-mail-login-option-m").removeClass("dingding-option-curr");
+        $(this).addClass("dingding-option-curr");
+        $(".dingding-mail-login-content-d").show();
+        $(".dingding-mail-login-content-m").hide();
+    })
+
+    var hanndleMessage = function (event) {
+        var origin = event.origin;
+        console.log("origin", event.origin);
+        if( origin == "https://login.dingtalk.com" ) { //判断是否来自ddLogin扫码事件。
+            var loginTmpCode = event.data; //拿到loginTmpCode后就可以在这里构造跳转链接进行跳转了
+            gotoUrl.push("&loginTmpCode=", loginTmpCode);
+
+            window.location.href = gotoUrl.join("");
         }
-        usernameNode.focus();
-        return 0;
+    };
+
+    if (typeof window.addEventListener != 'undefined') {
+        window.addEventListener('message', hanndleMessage, false);
+    } else if (typeof window.attachEvent != 'undefined') {
+        window.attachEvent('onmessage', hanndleMessage);
     }
 
-    var passwordNode = getEl("#password");
+    var param = [];
 
-    if (f) {
-        passwordNode.focus();
-        return 0;
-    }
-
-    if (!passwordNode.value) {
-        if (showError) {
-            var errLineNode = getEl("#login_error_line");
-
-            domUtils.show(errLineNode);
-            domUtils.setText(getEl(".login_error_text", errLineNode), "请输入密码");
-        }
-        passwordNode.focus();
-        return 0;
-    }
-    return 1;
-}
+                param.push("app_code=" + encodeURIComponent("smartmail"));
+        
+                param.push("lang=" + encodeURIComponent("zh_CN"));
+        
+                param.push("redirect_url=" + encodeURIComponent("http://mail.hichina.com/alimail/auth/callbackForCore?reurl=%2Falimail%2F"));
+        
+                param.push("network_env=" + encodeURIComponent("1"));
+        
+                param.push("sign=" + encodeURIComponent("d9f39a37c35087c5fb089fda67c1dedc"));
+        
+                param.push("device_id=" + encodeURIComponent("a572b786d9f54322b41027f76c055bb8"));
+        
+        
+        
+    document.getElementById("ding-login-iframe").src = "/login.htm?" + param.join("&");
 </script>
 
-<div style="display:none;" id="login_common_wrap">
-            <script type="text/javascript" nonce="">
-            function initLoginCommon() {
-            }
-
-            function doSubmit() {
-            }
-        </script>
-    </div>
-
-<script type="text/javascript" nonce="">
-var bIsUsernameFocus = 0;
-
-function checkSubmit() {
-    window.setTimeout(function () {
-        if (bIsUsernameFocus) {
-            var usernameNode = getEl("#username");
-
-            if (usernameNode.value) {
-                getEl("#password").focus();
-            }
-        } else {
-            checkFocus(0, 1) && doSubmit();
-        }
-    }, 50);
-}
-
-domUtils.ready(function () {
-    initLoginCommon();
-
-    var emailInputNode = getEl("#username");
-
-    domUtils.bind(emailInputNode, "focus", function () {
-        bIsUsernameFocus = 1;
-    });
-
-    domUtils.bind(emailInputNode, "blur", function () {
-        bIsUsernameFocus = 0;
-    });
-
-    domUtils.bind(document, "keydown", function (e) {
-        if (e.keyCode == 13) {
-            checkSubmit();
-        }
-    });
-
-    if (typeof loginInit != 'undefined') {
-        loginInit();
-    }
-});
-
-</script>
-
-    <div id="page">
-        <div class="header">
-            <div class="logo" title="">
-                <img class="logo_img" src="/static/0.1.30/images/forNetCN/logo.png">
-            </div>
-            <div class="links_wrap">
-                                                                    <span class="links_item inline_block links_item_first">
-                        <a href="https://www.aliyun.com/product/download-mail-client?wh_ttid=pc" target="_blank" _cat="toplink" _id="app">客户端</a>
-                    </span>
-                                                                        <span class="links_item inline_block "><a href="http://mailhelp.mxhichina.com/smartmail/" target="_blank" _cat="toplink" _id="help">帮助</a></span>
-                                                                                                                        <span class="links_item inline_block "><a href="javascript:void(0);">简体中文</a></span>
-                                                                                            <span class="links_item inline_block "><a href="?lang=zh_TW" _cat="langlink" _id="繁體中文">繁體中文</a></span>
-                                                                                            <span class="links_item inline_block "><a href="?lang=en" _cat="langlink" _id="English">English</a></span>
-                                                                        </div>
-        </div>
-
-        <div class="content bg_default">
-            <div class="content_inner">
-                                                    
-                <div class="login_pannel">
-                    <div class="login_pannel_bg"></div>
-                                            <iframe allowtransparency="true" src="https://mailsso.mxhichina.com/dingdinglogin/loginByDingQrCode.htm?app_code=smartmail&amp;domain_name=hichina.com&amp;lang=zh_CN&amp;network_env=1&amp;redirect_url=http%3A%2F%2Fmail.hichina.com%2Falimail%2Fauth%2FcallbackForCore%3Freurl%3D%252Falimail%252F&amp;sign=d9f39a37c35087c5fb089fda67c1dedc" class="login_panel_iframe" frameborder="0"></iframe>
-                                    </div>
-                <a href="javascript:void(0);" class="login_bg_link" target="_blank" id="login_bg_link" style="display:none;" _cat="bglink">&nbsp;&nbsp;&nbsp;</a>
-            </div>
-        </div>
-
-        <div class="footer">
-                                                </div>
-        <div id="cache_wrap">&lt;iframe style="width:1px;height:1px;overflow:hidden;" src="/alimail/auth/cache"&gt;&lt;/iframe&gt;</div>
-    </div>
-        <script type="text/javascript" nonce="">
-
-    var domUtils = sqm.dom.domUtils.main;
-
-    function getEl(s, el) {
-        return domUtils.find(el || document.body, s);
-    }
-
-    function entranceRemainCurrentFunc() {
-        domUtils.remove(document.getElementById("login_entrance_wrap"));
-    }
-
-    var ua = navigator.userAgent.toLowerCase();
-    var legacy = /msie 6/.test(ua) || /msie 7/.test(ua);
-
-    function initBackground(item) {
-        var attachPrefix = '\/attachment\/download_docstore';
-        var bgCssSuffix = '';
-        var backgroundId = '';
-        var n = getEl(".content");
-        var welcomeNode = getEl(".login_welcome");
-        var linkNode = getEl("#login_bg_link");
-
-        var backgroundImagefullScreenEnable = true;
-        var isBackgroundImageFullScreen = "" == "full";
-        var fullScreenEnableFromPreview = "" == "1";
-
-        domUtils.addClass(n, "bg_default");
-
-        if (backgroundId) {
-            if ((fullScreenEnableFromPreview || backgroundImagefullScreenEnable) && isBackgroundImageFullScreen) {
-                domUtils.prepend(n, "<img class='login_full_image' src='" + attachPrefix + "?fileID=" + encodeURIComponent(backgroundId) + "'>");
-
-                domUtils.addClass(document.body, "login_bg_full");
-
-            } else {
-                domUtils.setStyle(n, "background-image", "url(" + attachPrefix + "?fileID=" + encodeURIComponent(backgroundId) + ")");
-                domUtils.hide(linkNode);
-            }
-        } else if (bgCssSuffix) {
-            domUtils.addClass(n, bgCssSuffix);
-            domUtils.hide(linkNode);
-        } else if (item) {
-            item.backgroundColor && domUtils.setStyle(n, "background-color", item.backgroundColor);
-
-            if (legacy) {
-                if (item.combineImageId) {
-                    domUtils.setStyle(n, "background-image", "url(" + attachPrefix + "?fileID=" + encodeURIComponent(item.combineImageId) + ")");
-                    welcomeNode.innerHTML = "";
-                }
-            } else {
-                if (item.backgroundImageId) {
-                    domUtils.setStyle(n, "background-image", "url(" + attachPrefix + "?fileID=" + encodeURIComponent(item.backgroundImageId) + ")");
-                }
-
-                if (item.textImageId) {
-                    welcomeNode.innerHTML = "";
-                    domUtils.setStyle(welcomeNode, "background-image", "url(" + attachPrefix + "?fileID=" + encodeURIComponent(item.textImageId) + ")");
-                }
-            }
-
-            if (item.link) {
-                domUtils.show(linkNode);
-                linkNode.setAttribute("href", item.link);
-
-                if (item.event) {
-                    linkNode.setAttribute("_id", item.event);
-                }
-            } else {
-                domUtils.hide(linkNode);
-            }
-        } else {
-            domUtils.hide(linkNode);
-        }
 
 
-
-        domUtils.show(welcomeNode);
-    }
-
-    function doPlaceHolder(node) {
-        var inputNode = getEl("input", node);
-
-        domUtils.bind(inputNode, "focus", function() {
-            domUtils.removeClass(node, "login_input_wrap_prompt");
-        });
-
-        domUtils.bind(inputNode, "blur", function() {
-            if (!getEl("input", node).value) {
-                domUtils.addClass(node, "login_input_wrap_prompt");
-            }
-        });
-
-        domUtils.bind(getEl(".login_input_placeholder", node), "click", function() {
-            inputNode.focus();
-        });
-
-        if (inputNode.value) {
-            domUtils.removeClass(node, "login_input_wrap_prompt");
-        } else {
-            domUtils.addClass(node, "login_input_wrap_prompt");
-        }
-    }
-
-    domUtils.bind(document.getElementById("remember_wrap"), "click", function () {
-        var oCheckNode = document.getElementById("login_remember_check");
-        var checkCls = "ico_checked";
-        var oRememberNode = document.getElementById("login_remember");
-
-        if (domUtils.hasClass(oCheckNode, checkCls)) {
-            domUtils.removeClass(oCheckNode, checkCls);
-            oRememberNode.value = "0";
-        } else {
-            domUtils.addClass(oCheckNode, checkCls);
-            oRememberNode.value = "1";
-        }
-    });
-
-            function initLoginForm(remember, checkcodeUrl, errorMsg) {
-            var bAttrs = 0;
-
-            if (remember && remember.length > 0) {
-                bAttrs = 1;
-                domUtils.show(getEl(".remember_wrap"));
-                domUtils[remember == '1' ? 'addClass' : 'removeClass'](getEl("#login_remember_check"), 'ico_checked');
-                getEl("#login_remember").value = (remember == '1' ? '1' : '0');
-            } else {
-                domUtils.hide(getEl(".remember_wrap"));
-            }
-
-            if (errorMsg && errorMsg.length > 0) {
-                var errLineNode = getEl("#login_error_line");
-
-                domUtils.show(errLineNode);
-                domUtils.setText(getEl(".login_error_text", errLineNode), errorMsg);
-            } else {
-                domUtils.hide(getEl("#login_error_line"));
-            }
-
-            if (checkcodeUrl && checkcodeUrl.length > 0) {
-                bAttrs = 1;
-                domUtils.show(getEl("#checkcode_wrap"));
-                getEl("#login_checkcode_ico").setAttribute("src", checkcodeUrl + "&t=" + (new Date().getTime()));
-
-                domUtils.bind(getEl("#login_checkcode_ico"), "click", function () {
-                    getEl("#login_checkcode_ico").setAttribute("src", checkcodeUrl + "&t=" + (new Date().getTime()));
-                });
-            } else {
-                domUtils.hide(getEl("#checkcode_wrap"));
-                getEl("#login_checkcode_ico").setAttribute("src", "/static/0.1.30/images/blank.gif");
-            }
-
-            doPlaceHolder(getEl("#username_wrap"));
-            doPlaceHolder(getEl("#password_wrap"));
-            doPlaceHolder(getEl("#checkcode_wrap"));
-        }
-
-        function loginInit() {
-            domUtils.bind(getEl(".login_submit_btn"), "click", function () {
-                checkSubmit();
-            });
-
-            
-            legacy || setTimeout(function() {
-                document.getElementById("cache_wrap").append("<iframe style=\"width:1px;height:1px;overflow:hidden;\" src=\"\/alimail\/auth\/cache\"></iframe>");
-            }, 200);
-
-                    }
-    
-    </script>
-    <script type="text/javascript" nonce="">
-
-(function() {
-
-function _initBackground(item) {
-    if (typeof initBackground != 'undefined') {
-        initBackground(item);
-    }
-}
-
-
-_initBackground();
-
-
-})();
-
-</script>
-
-    
-
-        <script type="text/javascript" nonce="">
-        (function (win) {
-            if (win.dingtalk && win.dingtalk.platform && win.dingtalk.platform.invokeAPI) {
-                win.dingtalk.platform.invokeAPI("msgId1", "_mailin.localLog", {recordKey: "reload_from_index", recordValue: "reload_from_index"})
-                win.dingtalk.platform.invokeAPI("msgId2", "_mailin.account.reload", {});
-            }
-        })(window);
-    </script>
 
 
 </body></html>
